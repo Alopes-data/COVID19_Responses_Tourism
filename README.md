@@ -57,10 +57,10 @@ Figure 5. Bottom Courtiers in each LDA Group
  
 Weakest Responders at the Top.
 
-	Next continuing with defining if a country was Tourism dependent, its Population Level and level of tourism by reviewing the top and bottom of each category making the data relative to the observations within the dataset. We combined these variables indicated as factors and joined it with the variables selected from out PCA model to explain the economic variance and the different response rates to each group designated in our LDA model also listed as individual factors. This dataset was used in our XGBoost model to predict the if a county is going to have a strong response or not in a specific category.
+Next continuing with defining if a country was Tourism dependent, its Population Level and level of tourism by reviewing the top and bottom of each category making the data relative to the observations within the dataset. We combined these variables indicated as factors and joined it with the variables selected from out PCA model to explain the economic variance and the different response rates to each group designated in our LDA model also listed as individual factors. This dataset was used in our XGBoost model to predict the if a county is going to have a strong response or not in a specific category.
 
 ### Limitations further research
-	COVID-19 landscape and available data constantly changing. As countries update their responses and events unfold we are seeing different pivots. Also the data available was before vaccine rollouts started in many western countries which may change how each country sits within the responses. The United states could be evaluated with specific states such as New York, Florida, and California with the rest of the world instead of calculating the United States as a whole observation.  Using the PCA analysis to remove some variables could produce different results if different variables were included over others such as primary commodity export dependence.
+COVID-19 landscape and available data constantly changing. As countries update their responses and events unfold we are seeing different pivots. Also the data available was before vaccine rollouts started in many western countries which may change how each country sits within the responses. The United states could be evaluated with specific states such as New York, Florida, and California with the rest of the world instead of calculating the United States as a whole observation.  Using the PCA analysis to remove some variables could produce different results if different variables were included over others such as primary commodity export dependence.
 	
 ### Conclusions and Discussions
 With our XGBoost model in determining who had a Strong response with group 2, our direct public health group, the mean age, tourism category and GDP as well as the Food import dependence were the most important factors with a model error rate of .08. 
@@ -86,12 +86,12 @@ Figure 7. Distribution of groups among countries.
  
 
 
-	Within our dataset all of the countries with a high level of tourism dependence did not have weak group 2 responses and all were considered countries with strong responses showing that those with a strong dependence on tourism did have a stronger response to tourism. Those who relied on tourism had a harder time dealing with the pandemic impacts as a greater reliance on tourism directly reduces the rate of is resiliency specifically regional economic resilience (Watson & Deller, 2021), as, “show that countries exposed to high flows of international tourism are more prone to cases and deaths caused by the COVID-19 outbreak...This study examines the relationship between international tourism and COVID-19 cases and associated deaths in more than 90 nations.” (Farzanegan et al., 2020). This direct relation to deaths from COVID-19 and tourism contextualizes some of the responses from High tourism or tourism dependent countries, “The collapse of tourism resulting from the COVID-19 pandemic will have a profound impact on the Asia-Pacific small island developing States because of their high reliance on tourism rents.” (Tateno & Bolesta, 2020). This information correlates with our group 2 results of countries in group 2 having a higher rate of food independence which is similar to one of the negative impacts of tourism when compared with manufacturing and agriculture industry economic development, as tourism reliance has a moderating effect on the relationship between tourism development and economic development (Bojanic & Lo, 2016). These factors linking food independence and the connecting relationship to tourism is apparent in our strong 3 group, international mobility responses where we see that food import dependence is the largest determining factor with a error rate of .13.
+Within our dataset all of the countries with a high level of tourism dependence did not have weak group 2 responses and all were considered countries with strong responses showing that those with a strong dependence on tourism did have a stronger response to tourism. Those who relied on tourism had a harder time dealing with the pandemic impacts as a greater reliance on tourism directly reduces the rate of is resiliency specifically regional economic resilience (Watson & Deller, 2021), as, “show that countries exposed to high flows of international tourism are more prone to cases and deaths caused by the COVID-19 outbreak...This study examines the relationship between international tourism and COVID-19 cases and associated deaths in more than 90 nations.” (Farzanegan et al., 2020). This direct relation to deaths from COVID-19 and tourism contextualizes some of the responses from High tourism or tourism dependent countries, “The collapse of tourism resulting from the COVID-19 pandemic will have a profound impact on the Asia-Pacific small island developing States because of their high reliance on tourism rents.” (Tateno & Bolesta, 2020). This information correlates with our group 2 results of countries in group 2 having a higher rate of food independence which is similar to one of the negative impacts of tourism when compared with manufacturing and agriculture industry economic development, as tourism reliance has a moderating effect on the relationship between tourism development and economic development (Bojanic & Lo, 2016). These factors linking food independence and the connecting relationship to tourism is apparent in our strong 3 group, international mobility responses where we see that food import dependence is the largest determining factor with a error rate of .13.
 Figure 8. XG Boost Variable Importance – Group 3
  
 
 
- 	Reviewing those who had Strong group 1 responses, our XG Boost model found Aid dependence to be the most important factor followed closely by food and tourism levels with an error rate or .15. This appears to be the column with the most mixed responses. I believe this is due to most countries having strong group 2 or 3 responses to cover most of their issues and any other types of responses on their public after dealing with perceived external causes will be grouped in group 1. 
+Reviewing those who had Strong group 1 responses, our XG Boost model found Aid dependence to be the most important factor followed closely by food and tourism levels with an error rate or .15. This appears to be the column with the most mixed responses. I believe this is due to most countries having strong group 2 or 3 responses to cover most of their issues and any other types of responses on their public after dealing with perceived external causes will be grouped in group 1. 
 
 Figure 9. XG Boost Variable Importance –  Strong 1
  
@@ -110,14 +110,25 @@ Figure 10. XG Boost Variable Importance –  Weak 2
 
 ### References
 An, B. Y., & Tang, S.-Y. (2020). Lessons From COVID-19 Responses in East Asia: Institutional Infrastructure and Enduring Policy Instruments. The American Review of Public Administration, 50(6-7), 790–800. https://doi.org/10.1177/0275074020943707
+
 Bojanic, D. C., & Lo, M. (2016). A comparison of the moderating effect of tourism reliance on the economic development for islands and other countries. Tourism Management, 53, 207–214. https://doi.org/10.1016/j.tourman.2015.10.006
+
 Farzanegan, M. R., Gholipour, H. F., Feizi, M., Nunkoo, R., & Andargoli, A. E. (2020). International Tourism and Outbreak of Coronavirus (COVID-19): A Cross-Country Analysis. Journal of Travel Research, 004728752093159. https://doi.org/10.1177/0047287520931593
+
 Gössling, S., Scott, D., & Hall, C. M. (2020). Pandemics, tourism and global change: a rapid assessment of COVID-19. Journal of Sustainable Tourism, 29(1), 1–20. https://doi.org/10.1080/09669582.2020.1758708
+
 Greer, S. L., King, E. J., da Fonseca, E. M., & Peralta-Santos, A. (2020). The comparative politics of COVID-19: The need to understand government responses. Global Public Health, 15(9), 1–4. https://doi.org/10.1080/17441692.2020.1783340
+
 Hale, T., Angrist, N., Cameron-Blake, E., Hallas, L., Kira, B., Majumdar, S., Petherick, A., Phillips, T., Tatlow, H., & Webster, S. (2020). Variation in government responses to COVID-19 BSG Working Paper Series Providing access to the latest policy-relevant research. https://www.bsg.ox.ac.uk/sites/default/files/2020-09/BSG-WP-2020-032-v7.0.pdf
+
 Holzner, M. (2011). Tourism and economic development: The beach disease? Tourism Management, 32(4), 922–933. https://doi.org/10.1016/j.tourman.2010.08.007
+
 Jenkins, C. L. (2015). Tourism policy and planning for developing countries: some critical issues. Tourism Recreation Research, 40(2), 144–156. https://doi.org/10.1080/02508281.2015.1045363
+
 Seyfi, S., Hall, C. M., & Shabani, B. (2020). COVID-19 and international travel restrictions: the geopolitics of health and tourism. Tourism Geographies, 1–17. https://doi.org/10.1080/14616688.2020.1833972
+
 Tateno, Y., & Bolesta, A. (2020, May 1). Addressing the impact of the pandemic on tourism in Asia-Pacific small island developing States. Ideas.repec.org. https://ideas.repec.org/p/unt/pbmpdd/pb111.html
+
 Watson, P., & Deller, S. (2021). Tourism and economic resilience. Tourism Economics, 135481662199094. https://doi.org/10.1177/1354816621990943
+
 
