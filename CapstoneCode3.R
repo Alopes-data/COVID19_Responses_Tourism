@@ -1,5 +1,3 @@
-# Capstone Course
-
 # HYPOTHESIS:::Does a greater dependency on tourism mean a greater response to covid,
 
 # Define Tourism calculation - Strong tourism, Percentage tourism, Tourism dependent
@@ -1122,20 +1120,3 @@ odds_to_probs(1.8052)    #0.8587807
 importance_matrix <- xgb.importance(names(trainmat), model = model_tuned)
 #plotting importance
 xgb.plot.importance(importance_matrix)
-
-
-# MLR Model to try to predict the typeor response based on other variables within the dataset
-
-###Evaluation Metrics
-# Classification 
-  # Accuracy
-  # Precision
-  # Recall
-  # F1 Score
-  # AUC Area under the curve
-
-#Regression 
-  # MAE meanabsolute error
-  # MSE Mean squared error
-  # Root mean Square Erreor RMSE
-  # R squared (R^2)
